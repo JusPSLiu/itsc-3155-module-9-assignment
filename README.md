@@ -16,7 +16,7 @@ You must have Python 3.10+ installed to run this application.
 ## Instructions
 
 1. Have ***exactly one*** member of your team fork this repository. This team member should also add every other team member as write-access contributors to the fork.
-2. ***Every*** member of your team should clone the forked repository. **DO NOT** clone this repository, only clone the forked one. If you clone this repository, the remote will point here and not to the forked repository where you are allowed to make changes.
+2. ***Every*** member of your team should clone the forked repository. **DO** clone this repository, the forked one. If you clone this repository, the remote will point here and not to the forked repository where you are allowed to make changes.
 3. Create a virtual environment with `python -m venv venv`, activate it, and then install the project dependencies in this environment with `pip install -r requirements.txt`. This will install everything you need to run `flask` and `pytest`.
 4. ***Every*** team member should be assigned a feature to work on and each team member should work on a different feature. If your group has fewer than 6 members, you will assign and complete the first n stories, where n is the number of people in your group (ex. if you have 4 group members, you will only turn in stories 1-4).
 5. Create a new feature branch for your feature (ex. `implement-create-movies`).
