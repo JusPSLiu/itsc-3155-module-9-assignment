@@ -5,5 +5,33 @@
 {% block body %}
 <h1 class="mb-5">Create Movie Rating</h1>
 <p class="mb-3">Create a movie rating below</p>
-<!-- TODO: Feature 2 -->
+<body>
+    <div class="container mt-5">
+        <form>
+            <div class="mb-3">
+                <label for="movieName" class="form-label">Movie's Name</label>
+                <input type="text" class="form-control" id="movieName" name="movieName" required>
+            </div>
+            <div class="mb-3">
+                <label for="directorName" class="form-label">Director</label>
+                <input type="text" class="form-control" id="directorName" name="directorName" required>
+            </div>
+            <div class="mb-3">
+                <label for="rating" class="form-label">Rating</label>
+                <select class="form-select" id="rating" name="rating" required>
+                    <option selected>Choose...</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+
 {% endblock %}
