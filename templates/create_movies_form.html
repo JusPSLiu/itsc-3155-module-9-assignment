@@ -7,7 +7,7 @@
 <p class="mb-3">Create a movie rating below</p>
 <body>
     <div class="container mt-5">
-        <form>
+    <form action="/movies" method="post">
             <div class="mb-3">
                 <label for="movieName" class="form-label">Movie's Name</label>
                 <input type="text" class="form-control" id="movieName" name="movieName" required>
@@ -19,7 +19,7 @@
             <div class="mb-3">
                 <label for="rating" class="form-label">Rating</label>
                 <select class="form-select" id="rating" name="rating" required>
-                    <option selected>Choose...</option>
+                    <option selected value="0">Choose...</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
