@@ -6,20 +6,4 @@
 <h1 class="mb-5">Search Movie Ratings</h1>
 <p class="mb-3">Search for a movie rating below</p>
 <!-- TODO: Feature 3 -->
-<form action="/movies/search" method="GET" class="mb-4">
-    <div class="input-group">
-        <input type="text" class="form-control" placeholder="Enter movie title" name="title">
-        <button type="submit" class="btn btn-primary">Search</button>
-    </div>
-</form>
-{% if search_results %}
-<div class="mt-4">
-    <h2>Results</h2>
-    <ul>
-        {% for movie in search_results %}
-        <li>{{ movie.title }} - Rating: {{ movie.rating }}</li>
-        {% endfor %}
-    </ul>
-</div>
-{% endif %}
 {% endblock %}
