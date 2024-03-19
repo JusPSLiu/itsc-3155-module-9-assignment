@@ -5,5 +5,32 @@
 {% block body %}
 <h1 class="mb-5">All Movies</h1>
 <p class="mb-3">See our list of movie ratings below</p>
-<!-- TODO: Feature 1 -->
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">movie_id</th>
+        <th scope="col">title</th>
+        <th scope="col">director</th>
+        <th scope="col">rating</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for id, movie in movies.items() %}
+        <tr>
+            <th scope="row">{{id}}</th>
+            <td>{{ movie.title }}</td>
+            <td>{{ movie.director }}</td>
+            <td>
+            {% for i in range(5) %}
+                {% if i < movie.rating %}
+                    <img src="https://pluspng.com/img-png/star-png-star-png-image-2156.png" style="height:15px;">
+                {% else %}
+                    <img src="https://cdn.onlinewebfonts.com/svg/img_548678.png" style="height:17px">
+                {% endif %}
+            {% endfor %}
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
 {% endblock %}
