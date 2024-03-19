@@ -20,7 +20,7 @@ def test_list_movies(test_app: FlaskClient):
     assert response.status_code == 200
     print(response_data)
 
-    #i expect that the movie, the director, and two stars will show up
+    #i expect that the movie, the director, and two filled stars will show up followed by an empty star
     #idk if github will allow all these qhitespaces but i refuse to change
     #the spacing in the jinja stuff for readability
     expectedStuf = '''<td>mov</td>
